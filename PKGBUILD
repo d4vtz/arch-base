@@ -23,7 +23,7 @@ depends=(
     'amd-ucode'
 
     # Editor
-    'nvim'
+    'vim'
 
     # Filesystem
     'btrfs-progs'
