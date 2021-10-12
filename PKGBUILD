@@ -6,10 +6,37 @@ pkgdesc='Metapaquete de mi sistema base de ArchLinux'
 url='https://github.com/medicendav/arch-base'
 arch=('any')
 license=('MIT')
+install=arch-base.install
+
 depends=(
     # base
-    'base'
-    
+    'bash'
+    'bzip2'
+    'coreutils'
+    'file'
+    'filesystem'
+    'findutils'
+    'gawk'
+    'gcc-libs'
+    'gettext'
+    'glibc'
+    'grep'
+    'gzip'
+    'iproute2'
+    'iputils'
+    'licenses'
+    'pacman'
+    'pciutils'
+    'procps-ng'
+    'psmisc'
+    'sed'
+    'shadow'
+    'systemd'
+    'systemd-sysvcompat'
+    'tar'
+    'util-linux'
+    'xz'
+
     # base-devel
     'autoconf'
     'automake'
@@ -40,13 +67,8 @@ depends=(
     'linux-zen'
     'linux-zen-headers'
     'linux-firmware'
-
-    # Microcode
     'amd-ucode'
-
-    # Editor
-    'vim'
-
+   
     # Filesystem
     'btrfs-progs'
 
@@ -55,4 +77,9 @@ depends=(
     'grub-btrfs'
     'efibootmgr'
     'os-prober'
+
+    # Utils
+    'neovim'
+    'git'
+    'wpa_supplicant'
 )

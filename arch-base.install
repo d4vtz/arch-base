@@ -1,0 +1,14 @@
+post_install() {
+	post_upgrade
+}
+
+
+post_upgrade() {
+	ln -sf /usr/share/zoneinfo/America/Mexico_City "/etc/localetime"
+	echo "LANG=es_MX.UTF-8" > /etc/locale.conf
+	echo "KEYMAP=la-latin1" > /etc/vconsole.conf
+	echo "Sirius" > /etc/hostname
+	sed 's/#es_MX/es_MX/' -i /etc/locale.gen
+	locale-gen
+
+} 
