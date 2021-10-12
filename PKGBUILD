@@ -11,12 +11,34 @@ depends=(
     'base'
     
     # base-devel
-    'base-devel'
+    'autoconf'
+    'automake'
+    'binutils'
+    'bison'
+    'fakeroot'
+    'file'
+    'findutils'
+    'flex'
+    'gawk'
+    'gcc'
+    'gettext'
+    'grep'
+    'groff'
+    'gzip'
+    'libtool'
+    'm4'
+    'make'
+    'pacman'
+    'patch'
+    'pkgconf'
+    'sed'
+    'sudo'
+    'texinfo'
+    'which'
 
     # kernel
     'linux-zen'
     'linux-zen-headers'
-    'linux-zen-docs'
     'linux-firmware'
 
     # Microcode
